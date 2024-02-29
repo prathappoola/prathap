@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Parallel Test Suite</th></tr>
+<tr><td><a href="#t0">SafariTest</a></td><td class="num">2</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">41,712</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">ChromeTest</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">65,169</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">5</th><th class="num attn">1</th><th class="num">0</th><th class="num">0</th><th class="num">106,881</th><th colspan="2"></th></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Parallel Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">SafariTest &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">Rama_test.TestScenario_3</td><td><a href="#m0">setUp</a></td><td rowspan="1">1709206096915</td><td rowspan="1">2264</td></tr><tr><th colspan="4">SafariTest &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">Rama_test.TestScenario_3</td><td><a href="#m1">tearDown</a></td><td rowspan="1">1709206099207</td><td rowspan="1">0</td></tr><tr><th colspan="4">SafariTest &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">Rama_test.TestScenario_3</td><td><a href="#m2">TestScenario3</a></td><td rowspan="1">1709206099195</td><td rowspan="1">0</td></tr><tr><th colspan="4">SafariTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Rama_test.TestScenario_1</td><td><a href="#m3">TestScenario1</a></td><td rowspan="1">1709206071411</td><td rowspan="1">6228</td></tr><tr class="passedodd"><td rowspan="1">Rama_test.TestScenario_2</td><td><a href="#m4">TestScenario2</a></td><td rowspan="1">1709206092913</td><td rowspan="1">3642</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">ChromeTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Rama_test.TestScenario_1</td><td><a href="#m5">TestScenario1</a></td><td rowspan="1">1709206067579</td><td rowspan="1">4609</td></tr><tr class="passedodd"><td rowspan="1">Rama_test.TestScenario_2</td><td><a href="#m6">TestScenario2</a></td><td rowspan="1">1709206091234</td><td rowspan="1">1649</td></tr><tr class="passedeven"><td rowspan="1">Rama_test.TestScenario_3</td><td><a href="#m7">TestScenario3</a></td><td rowspan="1">1709206110953</td><td rowspan="1">11033</td></tr></tbody>
+</table>
+<h2>SafariTest</h2><h3 id="m0">Rama_test.TestScenario_3#setUp</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>safari</td><td>latest</td><td>macOS Catalina</td></tr><tr><th colspan="3">Exception</th></tr><tr><td colspan="3"><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Error: No Selenium config found for browserVersion: 122.0 Input capabilities : {&quot;EnableHTTP2InMartian&quot;:true,&quot;accessKey&quot;:&quot;**************************************************&quot;,&quot;browserName&quot;:&quot;chrome&quot;,&quot;browserVersion&quot;:&quot;122&quot;,&quot;build&quot;:&quot;Selenium 4&quot;,&quot;console&quot;:&quot;info&quot;,&quot;enableDebugLogsInMartian&quot;:false,&quot;enableNetworkThrottling&quot;:false,&quot;enableSSEInMartian&quot;:true,&quot;enableWSInMartian&quot;:true,&quot;extendedDebuging&quot;:true,&quot;headless&quot;:false,&quot;loggingPrefs&quot;:{&quot;browser&quot;:&quot;ALL&quot;,&quot;driver&quot;:&quot;ALL&quot;,&quot;performance&quot;:&quot;ALL&quot;,&quot;server&quot;:&quot;ALL&quot;},&quot;lt:options&quot;:{&quot;accessKey&quot;:&quot;**************************************************&quot;,&quot;user&quot;:&quot;********&quot;},&quot;name&quot;:&quot;Rama_test.TestScenario_3&quot;,&quot;network&quot;:true,&quot;network.har&quot;:true,&quot;performance&quot;:false,&quot;platform&quot;:&quot;macos 10.15&quot;,&quot;platformName&quot;:&quot;macOS Catalina&quot;,&quot;resolution&quot;:&quot;1920x1080&quot;,&quot;selenium_version&quot;:&quot;4.0.0&quot;,&quot;tunnel&quot;:false,&quot;tunnelIdentifier&quot;:&quot;&quot;,&quot;user&quot;:&quot;********&quot;,&quot;userAgent&quot;:&quot;selenium/4.1.0 (java windows)&quot;,&quot;version&quot;:&quot;122.0&quot;,&quot;video&quot;:true,&quot;visual&quot;:true,&quot;w3c&quot;:true}
+Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
+System info: host: &apos;3I-PC0CF95D&apos;, ip: &apos;169.254.98.139&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {LT:Options: {accessKey: hBpdTFnFrRNrweezqtnpr4xer9e..., user: topennms}, browserName: Chrome, browserVersion: 122, platformName: macos catalina}], desiredCapabilities=Capabilities {LT:Options: {accessKey: hBpdTFnFrRNrweezqtnpr4xer9e..., user: topennms}, browserName: Chrome, browserVersion: 122, build: Selenium 4, console: info, name: Rama_test.TestScenario_3, network: true, platformName: macOS Catalina, selenium_version: 4.0.0, tunnel: false, visual: true}}]
+Capabilities {}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:146)
+	at Rama_test.TestScenario_3.setUp(TestScenario_3.java:52)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">Rama_test.TestScenario_3#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">Rama_test.TestScenario_3#TestScenario3</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Error: No Selenium config found for browserVersion: 122.0 Input capabilities : {&quot;EnableHTTP2InMartian&quot;:true,&quot;accessKey&quot;:&quot;**************************************************&quot;,&quot;browserName&quot;:&quot;chrome&quot;,&quot;browserVersion&quot;:&quot;122&quot;,&quot;build&quot;:&quot;Selenium 4&quot;,&quot;console&quot;:&quot;info&quot;,&quot;enableDebugLogsInMartian&quot;:false,&quot;enableNetworkThrottling&quot;:false,&quot;enableSSEInMartian&quot;:true,&quot;enableWSInMartian&quot;:true,&quot;extendedDebuging&quot;:true,&quot;headless&quot;:false,&quot;loggingPrefs&quot;:{&quot;browser&quot;:&quot;ALL&quot;,&quot;driver&quot;:&quot;ALL&quot;,&quot;performance&quot;:&quot;ALL&quot;,&quot;server&quot;:&quot;ALL&quot;},&quot;lt:options&quot;:{&quot;accessKey&quot;:&quot;**************************************************&quot;,&quot;user&quot;:&quot;********&quot;},&quot;name&quot;:&quot;Rama_test.TestScenario_3&quot;,&quot;network&quot;:true,&quot;network.har&quot;:true,&quot;performance&quot;:false,&quot;platform&quot;:&quot;macos 10.15&quot;,&quot;platformName&quot;:&quot;macOS Catalina&quot;,&quot;resolution&quot;:&quot;1920x1080&quot;,&quot;selenium_version&quot;:&quot;4.0.0&quot;,&quot;tunnel&quot;:false,&quot;tunnelIdentifier&quot;:&quot;&quot;,&quot;user&quot;:&quot;********&quot;,&quot;userAgent&quot;:&quot;selenium/4.1.0 (java windows)&quot;,&quot;version&quot;:&quot;122.0&quot;,&quot;video&quot;:true,&quot;visual&quot;:true,&quot;w3c&quot;:true}
+Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
+System info: host: &apos;3I-PC0CF95D&apos;, ip: &apos;169.254.98.139&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {LT:Options: {accessKey: hBpdTFnFrRNrweezqtnpr4xer9e..., user: topennms}, browserName: Chrome, browserVersion: 122, platformName: macos catalina}], desiredCapabilities=Capabilities {LT:Options: {accessKey: hBpdTFnFrRNrweezqtnpr4xer9e..., user: topennms}, browserName: Chrome, browserVersion: 122, build: Selenium 4, console: info, name: Rama_test.TestScenario_3, network: true, platformName: macOS Catalina, selenium_version: 4.0.0, tunnel: false, visual: true}}]
+Capabilities {}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:146)
+	at Rama_test.TestScenario_3.setUp(TestScenario_3.java:52)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">Rama_test.TestScenario_1#TestScenario1</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">Rama_test.TestScenario_2#TestScenario2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>ChromeTest</h2><h3 id="m5">Rama_test.TestScenario_1#TestScenario1</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">Rama_test.TestScenario_2#TestScenario2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">Rama_test.TestScenario_3#TestScenario3</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

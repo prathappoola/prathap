@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="5" failed="0" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-02-29T16:57:37 IST" name="Parallel Test Suite" finished-at="2024-02-29T16:58:42 IST" duration-ms="65169">
+    <groups>
+    </groups>
+    <test started-at="2024-02-29T16:57:37 IST" name="SafariTest" finished-at="2024-02-29T16:58:19 IST" duration-ms="41712">
+      <class name="Rama_test.TestScenario_1">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Rama_test.TestScenario_1@7eac9008]" started-at="2024-02-29T16:57:37 IST" name="setUp" finished-at="2024-02-29T16:57:51 IST" duration-ms="13833" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[safari]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[latest]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[macOS Catalina]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TestScenario1()[pri:0, instance:Rama_test.TestScenario_1@7eac9008]" started-at="2024-02-29T16:57:51 IST" name="TestScenario1" finished-at="2024-02-29T16:57:57 IST" duration-ms="6228" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestScenario1 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Rama_test.TestScenario_1@7eac9008]" started-at="2024-02-29T16:57:57 IST" name="tearDown" finished-at="2024-02-29T16:57:58 IST" duration-ms="465" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Rama_test.TestScenario_1 -->
+      <class name="Rama_test.TestScenario_2">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Rama_test.TestScenario_2@4116aac9]" started-at="2024-02-29T16:57:58 IST" name="setUp" finished-at="2024-02-29T16:58:12 IST" duration-ms="14807" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[safari]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[latest]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[macOS Catalina]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TestScenario2()[pri:0, instance:Rama_test.TestScenario_2@4116aac9]" started-at="2024-02-29T16:58:12 IST" name="TestScenario2" finished-at="2024-02-29T16:58:16 IST" duration-ms="3642" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestScenario2 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Rama_test.TestScenario_2@4116aac9]" started-at="2024-02-29T16:58:16 IST" name="tearDown" finished-at="2024-02-29T16:58:16 IST" duration-ms="352" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Rama_test.TestScenario_2 -->
+      <class name="Rama_test.TestScenario_3">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Rama_test.TestScenario_3@62ddbd7e]" started-at="2024-02-29T16:58:16 IST" name="setUp" finished-at="2024-02-29T16:58:19 IST" duration-ms="2264" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[safari]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[latest]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[macOS Catalina]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: Error: No Selenium config found for browserVersion: 122.0 Input capabilities : {"EnableHTTP2InMartian":true,"accessKey":"**************************************************","browserName":"chrome","browserVersion":"122","build":"Selenium 4","console":"info","enableDebugLogsInMartian":false,"enableNetworkThrottling":false,"enableSSEInMartian":true,"enableWSInMartian":true,"extendedDebuging":true,"headless":false,"loggingPrefs":{"browser":"ALL","driver":"ALL","performance":"ALL","server":"ALL"},"lt:options":{"accessKey":"**************************************************","user":"********"},"name":"Rama_test.TestScenario_3","network":true,"network.har":true,"performance":false,"platform":"macos 10.15","platformName":"macOS Catalina","resolution":"1920x1080","selenium_version":"4.0.0","tunnel":false,"tunnelIdentifier":"","user":"********","userAgent":"selenium/4.1.0 (java windows)","version":"122.0","video":true,"visual":true,"w3c":true}
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: '3I-PC0CF95D', ip: '169.254.98.139', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {LT:Options: {accessKey: hBpdTFnFrRNrweezqtnpr4xer9e..., user: topennms}, browserName: Chrome, browserVersion: 122, platformName: macos catalina}], desiredCapabilities=Capabilities {LT:Options: {accessKey: hBpdTFnFrRNrweezqtnpr4xer9e..., user: topennms}, browserName: Chrome, browserVersion: 122, build: Selenium 4, console: info, name: Rama_test.TestScenario_3, network: true, platformName: macOS Catalina, selenium_version: 4.0.0, tunnel: false, visual: true}}]
+Capabilities {}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Error: No Selenium config found for browserVersion: 122.0 Input capabilities : {"EnableHTTP2InMartian":true,"accessKey":"**************************************************","browserName":"chrome","browserVersion":"122","build":"Selenium 4","console":"info","enableDebugLogsInMartian":false,"enableNetworkThrottling":false,"enableSSEInMartian":true,"enableWSInMartian":true,"extendedDebuging":true,"headless":false,"loggingPrefs":{"browser":"ALL","driver":"ALL","performance":"ALL","server":"ALL"},"lt:options":{"accessKey":"**************************************************","user":"********"},"name":"Rama_test.TestScenario_3","network":true,"network.har":true,"performance":false,"platform":"macos 10.15","platformName":"macOS Catalina","resolution":"1920x1080","selenium_version":"4.0.0","tunnel":false,"tunnelIdentifier":"","user":"********","userAgent":"selenium/4.1.0 (java windows)","version":"122.0","video":true,"visual":true,"w3c":true}
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: '3I-PC0CF95D', ip: '169.254.98.139', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {LT:Options: {accessKey: hBpdTFnFrRNrweezqtnpr4xer9e..., user: topennms}, browserName: Chrome, browserVersion: 122, platformName: macos catalina}], desiredCapabilities=Capabilities {LT:Options: {accessKey: hBpdTFnFrRNrweezqtnpr4xer9e..., user: topennms}, browserName: Chrome, browserVersion: 122, build: Selenium 4, console: info, name: Rama_test.TestScenario_3, network: true, platformName: macOS Catalina, selenium_version: 4.0.0, tunnel: false, visual: true}}]
+Capabilities {}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:50)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:246)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:168)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:146)
+at Rama_test.TestScenario_3.setUp(TestScenario_3.java:52)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1623)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TestScenario3()[pri:0, instance:Rama_test.TestScenario_3@62ddbd7e]" started-at="2024-02-29T16:58:19 IST" name="TestScenario3" finished-at="2024-02-29T16:58:19 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: Error: No Selenium config found for browserVersion: 122.0 Input capabilities : {"EnableHTTP2InMartian":true,"accessKey":"**************************************************","browserName":"chrome","browserVersion":"122","build":"Selenium 4","console":"info","enableDebugLogsInMartian":false,"enableNetworkThrottling":false,"enableSSEInMartian":true,"enableWSInMartian":true,"extendedDebuging":true,"headless":false,"loggingPrefs":{"browser":"ALL","driver":"ALL","performance":"ALL","server":"ALL"},"lt:options":{"accessKey":"**************************************************","user":"********"},"name":"Rama_test.TestScenario_3","network":true,"network.har":true,"performance":false,"platform":"macos 10.15","platformName":"macOS Catalina","resolution":"1920x1080","selenium_version":"4.0.0","tunnel":false,"tunnelIdentifier":"","user":"********","userAgent":"selenium/4.1.0 (java windows)","version":"122.0","video":true,"visual":true,"w3c":true}
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: '3I-PC0CF95D', ip: '169.254.98.139', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {LT:Options: {accessKey: hBpdTFnFrRNrweezqtnpr4xer9e..., user: topennms}, browserName: Chrome, browserVersion: 122, platformName: macos catalina}], desiredCapabilities=Capabilities {LT:Options: {accessKey: hBpdTFnFrRNrweezqtnpr4xer9e..., user: topennms}, browserName: Chrome, browserVersion: 122, build: Selenium 4, console: info, name: Rama_test.TestScenario_3, network: true, platformName: macOS Catalina, selenium_version: 4.0.0, tunnel: false, visual: true}}]
+Capabilities {}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Error: No Selenium config found for browserVersion: 122.0 Input capabilities : {"EnableHTTP2InMartian":true,"accessKey":"**************************************************","browserName":"chrome","browserVersion":"122","build":"Selenium 4","console":"info","enableDebugLogsInMartian":false,"enableNetworkThrottling":false,"enableSSEInMartian":true,"enableWSInMartian":true,"extendedDebuging":true,"headless":false,"loggingPrefs":{"browser":"ALL","driver":"ALL","performance":"ALL","server":"ALL"},"lt:options":{"accessKey":"**************************************************","user":"********"},"name":"Rama_test.TestScenario_3","network":true,"network.har":true,"performance":false,"platform":"macos 10.15","platformName":"macOS Catalina","resolution":"1920x1080","selenium_version":"4.0.0","tunnel":false,"tunnelIdentifier":"","user":"********","userAgent":"selenium/4.1.0 (java windows)","version":"122.0","video":true,"visual":true,"w3c":true}
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: '3I-PC0CF95D', ip: '169.254.98.139', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {LT:Options: {accessKey: hBpdTFnFrRNrweezqtnpr4xer9e..., user: topennms}, browserName: Chrome, browserVersion: 122, platformName: macos catalina}], desiredCapabilities=Capabilities {LT:Options: {accessKey: hBpdTFnFrRNrweezqtnpr4xer9e..., user: topennms}, browserName: Chrome, browserVersion: 122, build: Selenium 4, console: info, name: Rama_test.TestScenario_3, network: true, platformName: macOS Catalina, selenium_version: 4.0.0, tunnel: false, visual: true}}]
+Capabilities {}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:50)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:246)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:168)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:146)
+at Rama_test.TestScenario_3.setUp(TestScenario_3.java:52)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1623)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestScenario3 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Rama_test.TestScenario_3@62ddbd7e]" started-at="2024-02-29T16:58:19 IST" name="tearDown" finished-at="2024-02-29T16:58:19 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Rama_test.TestScenario_3 -->
+    </test> <!-- SafariTest -->
+    <test started-at="2024-02-29T16:57:37 IST" name="ChromeTest" finished-at="2024-02-29T16:58:42 IST" duration-ms="65169">
+      <class name="Rama_test.TestScenario_1">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Rama_test.TestScenario_1@368f2016]" started-at="2024-02-29T16:57:37 IST" name="setUp" finished-at="2024-02-29T16:57:47 IST" duration-ms="9999" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[latest]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows 10]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TestScenario1()[pri:0, instance:Rama_test.TestScenario_1@368f2016]" started-at="2024-02-29T16:57:47 IST" name="TestScenario1" finished-at="2024-02-29T16:57:52 IST" duration-ms="4609" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestScenario1 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Rama_test.TestScenario_1@368f2016]" started-at="2024-02-29T16:57:52 IST" name="tearDown" finished-at="2024-02-29T16:57:52 IST" duration-ms="668" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Rama_test.TestScenario_1 -->
+      <class name="Rama_test.TestScenario_2">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Rama_test.TestScenario_2@557caf28]" started-at="2024-02-29T16:57:52 IST" name="setUp" finished-at="2024-02-29T16:58:11 IST" duration-ms="18369" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[latest]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows 10]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TestScenario2()[pri:0, instance:Rama_test.TestScenario_2@557caf28]" started-at="2024-02-29T16:58:11 IST" name="TestScenario2" finished-at="2024-02-29T16:58:12 IST" duration-ms="1649" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestScenario2 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Rama_test.TestScenario_2@557caf28]" started-at="2024-02-29T16:58:12 IST" name="tearDown" finished-at="2024-02-29T16:58:13 IST" duration-ms="681" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Rama_test.TestScenario_2 -->
+      <class name="Rama_test.TestScenario_3">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Rama_test.TestScenario_3@408d971b]" started-at="2024-02-29T16:58:13 IST" name="setUp" finished-at="2024-02-29T16:58:30 IST" duration-ms="17386" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[latest]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows 10]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TestScenario3()[pri:0, instance:Rama_test.TestScenario_3@408d971b]" started-at="2024-02-29T16:58:30 IST" name="TestScenario3" finished-at="2024-02-29T16:58:41 IST" duration-ms="11033" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestScenario3 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Rama_test.TestScenario_3@408d971b]" started-at="2024-02-29T16:58:41 IST" name="tearDown" finished-at="2024-02-29T16:58:42 IST" duration-ms="682" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Rama_test.TestScenario_3 -->
+    </test> <!-- ChromeTest -->
+  </suite> <!-- Parallel Test Suite -->
+</testng-results>

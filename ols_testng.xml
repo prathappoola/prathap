@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="Rama_test.TestScenario_1"/>
+      <class name="com.lambdatest.TestScenario_3"/>
+      <class name="Rama_test.TestScenario_2"/>
+      <class name="com.lambdatest.CapturePerformanceMetrics"/>
+      <class name="Rama_test.TestScenario_3"/>
+      <class name="com.lambdatest.RelativeLocator"/>
+      <class name="com.lambdatest.CDPTestConsole"/>
+      <class name="com.lambdatest.InterceptNetwork"/>
+      <class name="com.lambdatest.BasicAuthentication"/>
+      <class name="com.lambdatest.OverrideDeviceMode"/>
+      <class name="com.lambdatest.TestScenario_2"/>
+      <class name="com.lambdatest.TestScenario_1"/>
+      <class name="com.lambdatest.EmulateNetworkConditions"/>
+      <class name="com.lambdatest.EmulateGeolocation"/>
+      <class name="com.lambdatest.JavaScriptExceptions"/>
+	
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

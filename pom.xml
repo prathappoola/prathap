@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>Malli_java-selenium-sample</groupId>
-	<artifactId>Malli_java-selenium-sample</artifactId>
+	<groupId>Rama_java-selenium-sample</groupId>
+	<artifactId>Rama_java-selenium-sample</artifactId>
 	<version>0.0.1</version>
 	<build>
 		<sourceDirectory>src/test</sourceDirectory>
@@ -29,7 +29,7 @@
 					<source>17</source>
 					<target>17</target>
                 <includes>
-                    <include>chandu/*.java</include>
+                    <include>Rama_test/*.java</include>
                 </includes>
                  <suiteXmlFiles>
                         <suiteXmlFile>src\resources\testng.xml</suiteXmlFile>

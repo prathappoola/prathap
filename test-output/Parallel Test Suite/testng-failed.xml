@@ -6,13 +6,13 @@
     <parameter name="version" value="latest"/>
     <parameter name="platform" value="macOS Catalina"/>
     <classes>
-      <class name="Rama_test.TestScenario_3">
+      <class name="Siva_test.TestScenario_3">
         <methods>
           <include name="TestScenario3"/>
-          <include name="setUp"/>
           <include name="tearDown"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- Rama_test.TestScenario_3 -->
+      </class> <!-- Siva_test.TestScenario_3 -->
     </classes>
   </test> <!-- SafariTest(failed) -->
 </suite> <!-- Failed suite [Parallel Test Suite] -->

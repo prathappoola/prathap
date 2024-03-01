@@ -1,4 +1,4 @@
-package Rama_test;
+package Siva_test;
 
 import java.net.MalformedURLException;
 import java.util.HashMap;
@@ -6,15 +6,19 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-public class TestScenario_1 {
+public class TestScenario_2 {
 
     public static String hubURL = "https://hub.lambdatest.com/wd/hub";
     private WebDriver driver;
@@ -22,7 +26,10 @@ public class TestScenario_1 {
     @BeforeMethod
     @Parameters({"browser", "version", "platform"})
     public void setUp(String browser, String version, String platform) throws MalformedURLException {
+    	// public void setup() throws MalformedURLException {
         DesiredCapabilities capabilities = new DesiredCapabilities();
+        capabilities.setCapability("browserName", "Chrome");
+        capabilities.setCapability("browserVersion", "95");
         capabilities.setCapability("browserName", browser);
         capabilities.setCapability("browserVersion", version);
         capabilities.setCapability("platformName", platform);
@@ -35,8 +42,9 @@ public class TestScenario_1 {
         capabilities.setCapability("tunnel", false);
 
         HashMap<String, Object> ltOptions = new HashMap<>();
-        ltOptions.put("user", "topennms");
-        ltOptions.put("accessKey", "hBpdTFnFrRNrweezqtnpr4xer9eUImuRnza3m27HgUFVIgVgaU");
+        ltOptions.put("user", "mullurisiva");
+        ltOptions.put("accessKey", "CVLrm6ctyWxpw2X8o6UvHnU95mSj8lD3nRwuppMvevK68UWlkl");
+
 
         capabilities.setCapability("LT:Options", ltOptions);
 
@@ -45,43 +53,28 @@ public class TestScenario_1 {
     }
 
     @Test
-    public void TestScenario1() {
-        try {
-        	
-            driver.get("https://www.lambdatest.com/selenium-playground");
-            
-            driver.findElement(By.linkText("Simple Form Demo")).click();
+    public void TestScenario2() {
+    	
+        driver.get("https://www.lambdatest.com/selenium-playground");
 
-            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.findElement(By.xpath("//a[normalize-space()='Drag & Drop Sliders']")).click();
 
-            if (driver.getCurrentUrl().contains("simple-form-demo")) {
-                System.out.println("URL contains 'simple-form-demo'");
-            } else {
-                System.out.println("URL does not contain 'simple-form-demo'");
-            }
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        WebElement slider = driver.findElement(By.xpath("(//input[@class='sp__range'])[3]"));
 
-            String expected = "Welcome to LambdaTest";
+        int maxValue = Integer.parseInt(slider.getAttribute("max"));
 
-            driver.findElement(By.id("user-message")).sendKeys(expected);
+        int desiredValue = (int) (0.95 * maxValue);
 
-            driver.findElement(By.xpath("//button[normalize-space()='Get Checked Value']")).click();
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].value = arguments[1]", slider, desiredValue);
 
-            String actual = driver.findElement(By.id("message")).getText();
-
-            Assert.assertEquals(actual, expected, "Both text same..........");
-
-            if (expected.equalsIgnoreCase(actual)) {
-                System.out.println("Message Same.............'");
-            } else {
-                System.out.println("Message different.............'");
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        String slidervalue = slider.getAttribute("value");
+        System.out.println("The value of the slider: " + slidervalue);
     }
 
+    
     @AfterMethod
     public void tearDown() {
         try {

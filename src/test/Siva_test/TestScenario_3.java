@@ -1,4 +1,4 @@
-package Rama_test;
+package Siva_test;
 
 
 import java.net.MalformedURLException;
@@ -44,8 +44,8 @@ public class TestScenario_3
         capabilities.setCapability("tunnel", false);
 
         HashMap<String, Object> ltOptions = new HashMap<>();
-        ltOptions.put("user", "topennms");
-        ltOptions.put("accessKey", "hBpdTFnFrRNrweezqtnpr4xer9eUImuRnza3m27HgUFVIgVgaU");
+        ltOptions.put("user", "mullurisiva");
+        ltOptions.put("accessKey", "CVLrm6ctyWxpw2X8o6UvHnU95mSj8lD3nRwuppMvevK68UWlkl");
         
         capabilities.setCapability("LT:Options", ltOptions);
 

@@ -5,19 +5,19 @@
         <parameter name="version" value="latest"/>
         <parameter name="platform" value="Windows 10"/>
         <classes>
-            <class name="Siva_test.TestScenario_1"/>
-     		 <class name="Siva_test.TestScenario_2"/>
-     		 <class name="Siva_test.TestScenario_3"/>
+            <class name="Poola_test.TestScenario_1"/>
+            <class name="Poola_test.TestScenario_2"/>
+            <class name="Poola_test.TestScenario_3"/>
         </classes>
     </test>
-    <test name="SafariTest">
-        <parameter name="browser" value="safari"/>
+    <test name="FirefoxTest">
+        <parameter name="browser" value="firefox"/>
         <parameter name="version" value="latest"/>
-        <parameter name="platform" value="macOS Catalina"/>
+        <parameter name="platform" value="Windows 10"/>
         <classes>
-             <class name="Siva_test.TestScenario_1"/>
-     		 <class name="Siva_test.TestScenario_2"/>
-     		 <class name="Siva_test.TestScenario_3"/>
+             <class name="Poola_test.TestScenario_1"/>
+             <class name="Poola_test.TestScenario_2"/>
+             <class name="Poola_test.TestScenario_3"/>
         </classes>
     </test>
 </suite>

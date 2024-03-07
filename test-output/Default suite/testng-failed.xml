@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Rama_test.TestScenario_1">
+      <class name="Siva_test.TestScenario_3">
         <methods>
+          <include name="TestScenario3"/>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="TestScenario1"/>
         </methods>
-      </class> <!-- Rama_test.TestScenario_1 -->
+      </class> <!-- Siva_test.TestScenario_3 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
